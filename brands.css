@@ -1,0 +1,452 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Berlin Sans FB', sans-serif;
+    background-image: url(gambar/corak\ abu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    font-family: Laurasia;
+}
+
+.logo {
+    width: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border: 2px solid red;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: red;
+    color: black;
+} 
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+
+.hero-image-container {
+    position: relative;
+    width: 100%; 
+    height: 90vh; 
+    overflow: hidden; 
+}
+
+.hero-image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.upper-hero {
+    position: relative;
+    height: 100vh;      
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    overflow: hidden;
+}
+
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 1; 
+}
+
+.video-background-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 2rem;
+  backdrop-filter: brightness(1.1);
+}
+
+.tempat-hits {
+    position: relative;
+    z-index: 1;
+}
+
+
+.tempat-hits h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: baby bumi;
+  letter-spacing: 2px;
+}
+
+.tempat-hits-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.tempat-hits-item {
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.tempat-hits-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.tempat-hits-item button {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* RESPONSIF */
+@media (max-width: 1200px) {
+  .tempat-hits-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tempat-hits-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+}
+
+/*new*/
+.upper-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #eee;
+  background-blend-mode: lighten;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+    /* OLD Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 3rem;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    
+    .hero-img img {
+      width: 100%;
+      max-width: 550px;
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hero-text {
+      max-width: 600px;
+    }
+    
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    #hero-section {
+      padding-top: 120px; /* space bawah navbar, ganti kalu teralu tinggi*/
+    }  
+    
+    .highlight {
+      color: #ff0000;
+      font-weight: bold;
+      position: relative;
+    }
+    
+    .highlight::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 8px;
+      background-image: url('underline.svg'); /* Optional underline effect */
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-buttons a {
+      margin-right: 1rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+
+.hero-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(255, 0, 0); 
+    font-weight: bold;
+    text-shadow: 10px 10px 10px rgba(0.15, 0, 0, 0.15); 
+    text-align: center;
+    font-family: baby bumi;
+    font-size: 80px;
+    letter-spacing: 3px;
+
+}
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text {
+        font-size: 24px; 
+        font-family:Baby Bumi;
+    }
+}
+
+.batas {
+    background-color: #000000; 
+    display: flex;
+    padding: 35px 50px;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date-time-container {
+    display: flex; /* Mengatur elemen dalam satu baris */
+    justify-content: space-between; /* Tanggal di kiri, jam di kanan */
+    align-items: center; /* Vertikal sejajar */
+    color: #000000; 
+    font-family: Hobo Std; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+    margin: 20px auto; 
+    width: 95%; 
+ 
+}
+
+.date-display {
+    text-align: left; 
+    flex: 1; 
+    letter-spacing: 1x;
+}
+
+.time-display {
+    text-align: right; 
+    flex: 1; 
+    letter-spacing: 2px;
+}
+
+
+.tempat-hits {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tempat-hits h2 {
+    font-size: 40px; /* Ukuran font lebih besar */
+    margin-bottom: 1rem;
+    color: #e10000; /* Warna lebih tegas */
+    font-family: baby bumi;
+    letter-spacing: 1px;
+}
+
+.tempat-hits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.tempat-hits-item {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 2rem;
+}
+
+.tempat-hits-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.tempat-hits-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgb(255, 0, 0);
+}
+
+.tempat-hits-item h3 {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    color: #ff0000;
+    font-family: baby bumi;
+    letter-spacing: 1px;
+    background-color: rgb(255, 255, 255); /* Tambahkan background di sini */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-block; /* Supaya background tidak selebar container */
+}
+
+
+.tempat-hits-item button {
+    background-color: #3f3f3f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+
+.tempat-hits-item button:hover {
+    background-color: #232323;
+    color: rgb(221, 0, 0);
+}
+
+
+
+.foter {
+    background-color: #d90000;  
+    text-align: center;
+    padding: 10px 0; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0; 
+}
+.apaja{
+    margin-bottom: -10px;
+}
+.wave-svg {
+    width: 100%; 
+    display: block;
+    position: relative;
+    margin-bottom: -10px; /* Adjust to remove gap */
+}
+

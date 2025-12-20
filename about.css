@@ -1,0 +1,127 @@
+
+body {
+    background-image: url(gambar/2865061.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #070000;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    display: block;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #087ff6;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+
+.profile-picture h1 {
+    text-align: center;
+    font-family: Safety Goggles;
+    letter-spacing: 6px;
+}
+
+.profile-picture img {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    border-radius: 50%;
+
+}
+
+.isi {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: Berlin Sans FB;
+    font-size: 20px;
+    width: 960px;
+}
+.isi h1{
+    font-family: Safety Goggles;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.isi h2{
+    font-family: Safety Goggles;
+    letter-spacing: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+
+}
+
+table, th, td {
+    border: 3px solid #000000;
+
+}
+
+th {
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    font-family: Safety Goggles;
+    letter-spacing: 3px;
+}
+
+
+.footer {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universitas California</title>
+    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="animasi.css" class="animasi">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="icon" href="gambar/indi.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="gambar/indi.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="skateboard.html">Skateboard</a></li>
+            <li><a href="champion.html">Championship</a></li>
+            <li><a href="trik.html">Trick</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Gambar di bawah navbar -->
+    <section class="video-background-section">
+  <video autoplay muted loop playsinline class="video-background">
+    <source src="gambar/vidio_sampul.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+   <div class="overlay-content">
+    <div class="tempat-hits">
+      <h2>Skateboard Componen</h2>
+      <div class="tempat-hits-container">
+
+        <!-- 12 ITEM --> 
+        <!-- Add this inside the tempat-hits-container replacing the old content -->
+<div class="tempat-hits-item" data-modal="modal-deck">
+  <h3>Deck</h3>
+  <img src="gambar/deck.jpeg" alt="Independent">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-bearing">
+  <h3>Bearing</h3>
+  <img src="gambar/bering.jpeg" alt="Thrasher">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-truck">
+  <h3>Truck</h3>
+  <img src="gambar/truck.jpeg" alt="SpitFire">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-wheels">
+  <h3>Wheels</h3>
+  <img src="gambar/wheels.jpeg" alt="DC Shoes">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-grip">
+  <h3>Grip Tape</h3>
+  <img src="gambar/grip.jpeg" alt="Element">
+  <button class="open-modal">Detail</button>
+</div>
+
+<!-- MODALS -->
+<!-- MODAL: Deck -->
+<div class="modal" id="modal-deck">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/deck.jpeg" alt="Deck">
+      <div class="modal-text">
+        <h2>Deck</h2>
+        <p>Deck adalah papan utama dari skateboard, biasanya terbuat dari kayu maple yang kuat dan fleksibel. Bagian ini sangat mempengaruhi trik dan stabilitas saat bermain.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Bearing -->
+<div class="modal" id="modal-bearing">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/bering.jpeg" alt="Bearing">
+      <div class="modal-text">
+        <h2>Bearing</h2>
+        <p>Bearing adalah komponen penting yang membuat roda skateboard berputar. Biasanya terbuat dari baja atau keramik, dan memiliki sistem penilaian ABEC.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Truck -->
+<div class="modal" id="modal-truck">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/truck.jpeg" alt="Truck">
+      <div class="modal-text">
+        <h2>Truck</h2>
+        <p>Truck adalah sumbu logam di bawah deck yang menghubungkan roda. Mereka memungkinkan manuver seperti turning dan grinding.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Wheels -->
+<div class="modal" id="modal-wheels">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/wheels.jpeg" alt="Wheels">
+      <div class="modal-text">
+        <h2>Wheels</h2>
+        <p>Wheels skateboard biasanya terbuat dari polyurethane dan tersedia dalam berbagai ukuran dan kekerasan, memengaruhi kecepatan dan grip.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Grip Tape -->
+<div class="modal" id="modal-grip">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/grip.jpeg" alt="Grip Tape">
+      <div class="modal-text">
+        <h2>Grip Tape</h2>
+        <p>Grip tape adalah permukaan kasar yang ditempel di atas deck, berfungsi memberi traksi agar kaki tidak mudah tergelincir.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- akhir modal -->
+
+      </div>
+    </div>
+        <div class="pagination">
+        <a href="skateboard.html" class="page-number ">1</a>
+        <a href="skateboard2.html" class="page-number active">2</a>
+        </div>
+  </div>
+</section>
+
+<script src="modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Universitas California</title>
+    <link rel="stylesheet" href="trik.css">
+    <link rel="stylesheet" href="animasi.css">
+    <link rel="icon" href="gambar/indi.png">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="gambar/indi.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="skateboard.html">Skateboard</a></li>
+            <li><a href="champion.html">Championship</a></li>
+            <li><a href="trik.html">Trick</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+        <h1>Trick Skateboard – Video YouTube</h1>
+        <p>Video tutorial skateboard dari YouTube yang diputar langsung di website.</p>
+
+        <!-- Video Standar -->
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_ANDA"
+                title="YouTube video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Autoplay (Muted) -->
+        <h2>Autoplay (Muted)</h2>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_ANDA?autoplay=1&mute=1"
+                title="YouTube autoplay"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Playlist -->
+        <h2>Playlist Tutorial</h2>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID_ANDA"
+                title="YouTube playlist"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
+</body>
+</html>

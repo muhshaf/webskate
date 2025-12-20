@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universitas California</title>
+    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="animasi.css" class="animasi">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="icon" href="gambar/indi.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="gambar/indi.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="skateboard.html">Skateboard</a></li>
+            <li><a href="champion.html">Championship</a></li>
+            <li><a href="trik.html">Trick</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Gambar di bawah navbar -->
+    <section class="video-background-section">
+  <video autoplay muted loop playsinline class="video-background">
+    <source src="gambar/vidio_sampul.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+   <div class="overlay-content">
+    <div class="tempat-hits">
+      <h2>Skateboard Componen</h2>
+      <div class="tempat-hits-container">
+
+        <!-- 12 ITEM -->
+        <div class="tempat-hits-item" data-modal="modal-nuts">
+  <h3>Nuts</h3>
+  <img src="gambar/nuts.jpeg" alt="Nuts">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-pivot">
+  <h3>Pivot</h3>
+  <img src="gambar/pivot.jpeg" alt="Pivot">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-bushing">
+  <h3>Bushing</h3>
+  <img src="gambar/busing.jpeg" alt="Bushing">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-riser">
+  <h3>Riser Pad</h3>
+  <img src="gambar/riser.jpeg" alt="Riser Pad">
+  <button class="open-modal">Detail</button>
+</div>
+
+<div class="tempat-hits-item" data-modal="modal-rails">
+  <h3>Grab Rails</h3>
+  <img src="gambar/rails.jpeg" alt="Grab Rails">
+  <button class="open-modal">Detail</button>
+</div>
+
+<!-- MODAL: Nuts -->
+<div class="modal" id="modal-nuts">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/nuts.jpeg" alt="Nuts">
+      <div class="modal-text">
+        <h2>Nuts</h2>
+        <p>Nuts adalah mur kecil yang digunakan untuk mengencangkan roda pada axle truck skateboard. Penting untuk diperiksa agar tidak longgar saat digunakan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Pivot -->
+<div class="modal" id="modal-pivot">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/pivot.jpeg" alt="Pivot">
+      <div class="modal-text">
+        <h2>Pivot</h2>
+        <p>Pivot adalah bagian bawah truck yang masuk ke pivot cup dan berperan penting dalam kelincahan dan turning skateboard.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Bushing -->
+<div class="modal" id="modal-bushing">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/busing.jpeg" alt="Bushing">
+      <div class="modal-text">
+        <h2>Bushing</h2>
+        <p>Bushing adalah karet bundar pada truck yang menentukan fleksibilitas dalam berbelok. Tersedia dalam berbagai kekerasan sesuai preferensi rider.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Riser Pad -->
+<div class="modal" id="modal-riser">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/riser.jpeg" alt="Riser Pad">
+      <div class="modal-text">
+        <h2>Riser Pad</h2>
+        <p>Riser pad adalah bantalan antara deck dan truck yang mencegah wheel bite dan menambah ketinggian, cocok untuk roda besar.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Grab Rails -->
+<div class="modal" id="modal-rails">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-body">
+      <img src="gambar/rails.jpeg" alt="Grab Rails">
+      <div class="modal-text">
+        <h2>Grab Rails</h2>
+        <p>Grab rails adalah aksesori yang dipasang di bagian bawah deck agar mudah digenggam saat melakukan trik grab dan juga melindungi sisi deck dari gesekan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- akhir modal-->
+
+      </div>
+        <div class="pagination">
+        <a href="skateboard.html" class="page-number ">1</a>
+        <a href="skateboard2.html" class="page-number active">2</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<script src="modal.js"></script>
+
+</body>
+</html>

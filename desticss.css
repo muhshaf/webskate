@@ -1,0 +1,112 @@
+/* Gaya Umum */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #bd0000;
+}
+
+/* Container Wisata */
+.wisata-container {
+    display: flex;
+    flex-wrap: wrap; /* Agar responsif */
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1000px;
+    background-image: url(gambar/hitam.jpg);
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.1);
+}
+
+/* Gambar Wisata */
+.image-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.wisata-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.wisata-image:hover {
+    transform: scale(1.05); /* Zoom in saat dihover */
+}
+
+/* Deskripsi Wisata */
+.text-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.wisata-title {
+    font-size: 2em;
+    color: #d80000;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: baby bumi;
+    letter-spacing: 1px;
+}
+
+.wisata-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: justify;
+    font-family: poppins;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .wisata-container {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .text-container {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .wisata-title {
+        font-size: 1.5em;
+    }
+
+    .wisata-description {
+        font-size: 1em;
+    }
+}
+
+/* Tombol di bawah deskripsi */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wisata-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Warna latar tombol */
+    color: #ffffff; /* Warna teks */
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+
+.wisata-button:hover {
+    background-color: #740000; /* Warna saat di-hover */
+    transform: scale(1.1); /* Sedikit membesar saat di-hover */
+}
+

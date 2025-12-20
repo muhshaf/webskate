@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Universitas California</title>
+    <link rel="stylesheet" href="laga.css">
+    <link rel="stylesheet" href="animasi.css" class="animasi">
+    <link rel="icon" href="gambar/indi.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="gambar/indi.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="skateboard.html">Skateboard</a></li>
+            <li><a href="champion.html">Championship</a></li>
+            <li><a href="trik.html">Trick</a></li>
+        </ul>
+        <!-- Logout Button -->
+        <div class="logout-container">
+            <a href="login2.html" class="logout">Logout</a>
+        </div>
+    </nav>
+    
+    <!-- Gambar di bawah navbar -->
+    <section class="upper-hero">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="hero-video">
+    <source src="gambar/vidio_sampul.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+    </video>
+    <!-- Hero Text Content -->
+    <div class="hero-content">
+    <h1>Welcome to 
+      <span class="wave-container highlight">
+        <h1 class="wave-text">
+          Championship
+        </h1>
+      </span>
+    </h1>
+
+    </div>
+    </section>
+    <div class="batas"></div>
+    
+
+    <div class="date-time-container">
+        <div class="date-display">Tanggal</div>
+        <div class="time-display">Jam</div>
+    </div>
+
+ <!-- Konten Deskripsi dan Gambar dengan Slider -->
+ <section class="content-section">
+        <div class="description">
+            <h2>X-Games Skateboarding</h2>
+            <p>
+            Skateboard street di X Games memiliki sejarah yang cukup panjang, dimulai dengan inklusi 
+            skateboard sebagai salah satu cabang olahraga dalam X Games pada tahun 1995. Awalnya, skateboard 
+            dalam X Games mencakup berbagai gaya seperti vert dan street. Street skating, yang melibatkan trik 
+            di lingkungan perkotaan, semakin populer dan menjadi bagian penting dari kompetisi X Games. 
+
+           
+        </div>
+
+        <!-- Slider Section -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><a href="wino1.html"><img src="gambar/japan.jpeg" alt="Umelasi"></a></div>
+                <div class="slide"><a href="wino2.html"><img src="gambar/xgames win.jpg" alt="Tumpak"></a></div>
+                <div class="slide"><a href="wino3.html"><img src="gambar/winner chiba.jpg" alt="Tumpak"></a></div>
+                <div class="slide"><a href="wino4.html"><img src="gambar/womens shanghai.jpg" alt="Umelasi"></a></div>
+                <div class="slide"><a href="wino5.html"><img src="gambar/xgames jamie.jpg" alt="Tumpak"></a></div>
+                
+            </div>
+            <div class="navigation">
+                <button class="nav-btn" id="prev">&#9664; </button> <!-- Panah Kiri -->
+                <button class="nav-btn" id="next"> &#9654;</button> <!-- Panah Kanan -->
+            </div>
+            <div class="button-container">
+                <a href="champion.html" class="wisata-button">To the Hub!</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+<footer class="footer">
+  <p>&copy; 2025 Muhamad Shafly Pratama.</p>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        let index = 0;
+
+        function showSlide(i) {
+            index += i;
+            if (index < 0) {
+                index = slide.length - 1;
+            } else if (index >= slide.length) {
+                index = 0;
+            }
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
+
+        prev.addEventListener('click', () => showSlide(-1));
+        next.addEventListener('click', () => showSlide(1));
+    </script>
+</body>
+</html>

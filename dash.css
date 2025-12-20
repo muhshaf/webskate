@@ -1,0 +1,61 @@
+
+body {
+    background-image: url(gambar/bali3.jpg);
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    box-sizing: border-box; /* Memastikan padding termasuk dalam dimensi elemen */
+    overflow: hidden; 
+}
+
+.container {
+    background-color: rgba(2, 0, 0, 0.4); /* Transparan */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+    max-height: 250px;
+    height: 100%;
+}
+
+h2 {
+    font-family: 'baby bumi', sans-serif;
+    font-size: 40px;
+    color:white;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+p {
+    font-size: 16px;
+    color:black;
+    margin-bottom: 30px;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #009ee7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'baby bumi', sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.logout-btn:hover {
+    background-color: #39d624;
+}

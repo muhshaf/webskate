@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Universitas California</title>
+    <title>Skateboard Tricks - Universitas California</title>
     <link rel="stylesheet" href="trik.css">
     <link rel="stylesheet" href="animasi.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="icon" href="gambar/indi.png">
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo-container">
-            <img src="gambar/indi.png" alt="Logo Universitas Pamulang" class="logo">
+            <img src="gambar/indi.png" alt="Logo" class="logo">
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -23,62 +23,83 @@
         </ul>
     </nav>
 
-
-    <!-- Gambar di bawah navbar -->
     <section class="video-background-section">
-    <iframe 
-    src="https://www.youtube.com/embed/tXS7N05Wpjk" 
-    title="Tutorial Skateboard"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-    </iframe>
-    
-    
-    <!-- Content -->
-    <main class="content">
-        <h1>Trick Skateboard – Video YouTube</h1>
-        <p>Video tutorial skateboard dari YouTube yang diputar langsung di website.</p>
 
-        <!-- Video Standar -->
-        <div class="video-wrapper">
-            <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_ANDA"
-                title="YouTube video"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="gambar/vidio_sampul.mp4" type="video/mp4">
+    </video>
 
-        <!-- Autoplay (Muted) -->
-        <h2>Autoplay (Muted)</h2>
-        <div class="video-wrapper">
-            <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_ANDA?autoplay=1&mute=1"
-                title="YouTube autoplay"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
-        </div>
+    <div class="overlay-content">
+        <h1 class="trick-title">Skateboard Tricks Gallery</h1>
 
-        <!-- Playlist -->
-        <h2>Playlist Tutorial</h2>
-        <div class="video-wrapper">
-            <iframe
-                src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID_ANDA"
-                title="YouTube playlist"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
+        <div class="trick-grid-container">
+
+            <div class="trick-item video-card" data-video="rlK_G3Ql42Y">
+                <img src="https://img.youtube.com/vi/rlK_G3Ql42Y/hqdefault.jpg">
+                <span class="play-btn">▶</span>
+                <h3>Basic Ollie</h3>
+                <p>Teknik dasar melompat dengan papan.</p>
+            </div>
+
+            <div class="trick-item video-card" data-video="-CvqGOkV11c">
+                <img src="https://img.youtube.com/vi/-CvqGOkV11c/hqdefault.jpg">
+                <span class="play-btn">▶</span>
+                <h3>Kickflip</h3>
+                <p>Memutar papan 360 derajat di udara.</p>
+            </div>
+
+            <div class="trick-item video-card" data-video="UvjNBSlmjLg">
+                <img src="https://img.youtube.com/vi/UvjNBSlmjLg/hqdefault.jpg">
+                <span class="play-btn">▶</span>
+                <h3>Heelflip</h3>
+                <p>Variasi putaran berlawanan arah kickflip.</p>
+            </div>
+
+            <div class="trick-item video-card" data-video="vy9sTgjhel4">
+                <img src="https://img.youtube.com/vi/vy9sTgjhel4/hqdefault.jpg">
+                <span class="play-btn">▶</span>
+                <h3>Pop Shuvit</h3>
+                <p>Memutar papan 180 derajat tanpa membalik.</p>
+            </div>
+
         </div>
-    </main>
+    </div>
+</section>
+
+<!-- MODAL -->
+<div class="yt-modal" id="ytModal">
+    <span class="yt-close">&times;</span>
+    <div class="yt-frame-wrapper">
+        <iframe id="ytFrame" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+const cards = document.querySelectorAll('.video-card');
+const modal = document.getElementById('ytModal');
+const frame = document.getElementById('ytFrame');
+const closeBtn = document.querySelector('.yt-close');
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        const id = card.dataset.video;
+        frame.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+        modal.classList.add('show');
+    });
+});
+
+closeBtn.onclick = () => {
+    modal.classList.remove('show');
+    frame.src = '';
+};
+
+modal.onclick = e => {
+    if (e.target === modal) {
+        modal.classList.remove('show');
+        frame.src = '';
+    }
+};
+</script>
 
 </body>
 </html>
-
-
-
-
